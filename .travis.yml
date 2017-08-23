@@ -4,12 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules
+before_script:
+- chmod +x bash.sh
 script:
 - "./bash.sh"
-branches:
-  only:
-  - master
-  except:
-  - "/^v\\d/"
-sudo: false
+sudo: enabled
 dist: trusty
