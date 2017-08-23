@@ -37,6 +37,5 @@
     "svg-loader": "0.0.2",
     "universal-cookie": "^2.0.8",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.5"
   }
 }
