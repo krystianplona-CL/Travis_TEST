@@ -1,5 +1,15 @@
 language: node_js
 node_js:
   - "7"
+cache:
+  directories:
+  - node_modules
+script:
+- "./bash.sh"
+branches:
+  only:
+  - master
+  except:
+  - "/^v\\d/"
 sudo: enabled
 dist: trusty
