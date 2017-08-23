@@ -1,5 +1,5 @@
 {
-  "name": "coderslab",
+  "name": "travis",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,10 +8,6 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "flux": "^3.1.2",
