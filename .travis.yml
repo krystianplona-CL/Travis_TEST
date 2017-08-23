@@ -11,5 +11,5 @@ branches:
   - master
   except:
   - "/^v\\d/"
-sudo: enabled
+sudo: false
 dist: trusty
