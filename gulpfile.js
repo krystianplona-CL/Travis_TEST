@@ -46,8 +46,3 @@ gulp.task('scss-dev', function() {
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('css'))
 })
-
-
-gulp.task('default', ['scss-dev'], function() {
-    gulp.watch('sass/**/*.scss', ['scss-dev'])
-});
