@@ -1,2 +1,2 @@
 npm install
-echo "dupa"
+echo "test1"
