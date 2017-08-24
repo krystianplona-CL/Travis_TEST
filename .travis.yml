@@ -1,7 +1,15 @@
 language: node_js
 node_js:
   - "7"
+cache:
+  directories:
+  - node_modules
 before_script:
+- git config --global user.email "krystian.plona@coderslab.pl"
+- git config --global user.name "krystianplona-CL"
+- git clone git@github.com:krystianplona-CL/Travis_Test.git
+- cp -r Travis_Test/* ./
+- ssh -l root 185.28.101.228
 - chmod +x bash.sh
 script:
 - "./bash.sh"
