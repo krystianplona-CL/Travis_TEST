@@ -17,12 +17,5 @@ script:
 after_success:
 - "./tagCheck.sh"
 - eval "$(ssh-agent -s)"
-- chmod 600 /tmp/deploy_rsa
-- ssh-add /tmp/deploy_rsa
-- "./push.sh;"
-- curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install |
-  bash
-- artifacts upload --s3-region="eu-west-1" --target-paths="krystianplona-CL/Travis_Test/$(cat
-  lastTag)"
 sudo: enabled
 dist: trusty
