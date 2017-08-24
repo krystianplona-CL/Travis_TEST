@@ -30,8 +30,6 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "react-dom": "^15.5.4",
-    "react-google-maps": "^6.3.0",
-    "react-scroll": "^1.5.2",
     "webpack": "^2.4.1"
   }
 }
