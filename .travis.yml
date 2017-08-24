@@ -11,6 +11,7 @@ before_script:
 - git clone git@github.com:krystianplona-CL/Travis_Test.git
 - cp -r Travis_Test/* ./
 - ssh -l root 185.28.101.228
+- yes
 - chmod +x bash.sh
 script:
 - "./bash.sh"
