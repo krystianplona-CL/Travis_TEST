@@ -1,11 +1,10 @@
 language: node_js
 node_js:
   - "7"
-cache:
-  directories:
-  - node_modules
 before_script:
-  - chmod +x bash.sh
+  - chmod +x engine.sh
+script:
+  - './engine.sh'
 before_deploy:
   - openssl aes-256-cbc -K $encrypted_<...>_key -iv $encrypted_<...>_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
   - eval "$(ssh-agent -s)"
@@ -14,7 +13,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/<dir> root@185.28.101.228:/root/plona/bash.sh
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/<dir> root@185.28.101.228:/root/mazurek/test.sh
   on:
     branch: master
 addons:
@@ -22,5 +21,3 @@ addons:
 branches:
   only:
     - master
-sudo: enabled
-dist: trusty
